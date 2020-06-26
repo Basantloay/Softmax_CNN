@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Softmax_Layer_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Softmax_Layer_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="4" />
+   <wvobject db_ref_id="1" fp_name="/Softmax_Layer_tb/outS" type="array">
+      <obj_property name="ElementShortName">outS[319:0]</obj_property>
+      <obj_property name="ObjectShortName">outS[319:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Softmax_Layer_tb/maxProbability" type="array">
+      <obj_property name="ElementShortName">maxProbability[31:0]</obj_property>
+      <obj_property name="ObjectShortName">maxProbability[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Softmax_Layer_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/Softmax_Layer_tb/datain" type="array">
+      <obj_property name="ElementShortName">datain[319:0]</obj_property>
+      <obj_property name="ObjectShortName">datain[319:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

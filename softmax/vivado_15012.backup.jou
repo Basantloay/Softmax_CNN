@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Jun 07 02:21:00 2020
+# Process ID: 18400
+# Log file: D:/CNN2/softmax/vivado.log
+# Journal file: D:/CNN2/softmax\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CNN2/softmax/softmax.xpr
+close [ open D:/CNN2/softmax/softmax.srcs/sources_1/new/term.v w ]
+add_files D:/CNN2/softmax/softmax.srcs/sources_1/new/term.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+close [ open D:/CNN2/softmax/softmax.srcs/sources_1/new/Softmax_Layer.v w ]
+add_files D:/CNN2/softmax/softmax.srcs/sources_1/new/Softmax_Layer.v
+update_compile_order -fileset sources_1
+close [ open D:/CNN2/softmax/softmax.srcs/sources_1/new/reciporical.v w ]
+add_files D:/CNN2/softmax/softmax.srcs/sources_1/new/reciporical.v
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+close_project
+open_project D:/CNN2/softmax/softmax.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source exponential_tb.tcl
+close_sim
+close [ open D:/CNN2/softmax/softmax.srcs/sources_1/new/reciporical_tb.v w ]
+add_files D:/CNN2/softmax/softmax.srcs/sources_1/new/reciporical_tb.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source exponential_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top reciporical_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top reciporical_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim

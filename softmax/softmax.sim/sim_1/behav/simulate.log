@@ -1,0 +1,8 @@
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+ Input array Softmax layer= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ Output array Softmax layer= cbXxxxxxcbXxxxxxcbXxxxxxcbXxxxxxcbXxxxxxcbXxxxxxcbXxxxxxcbXxxxxxcbXxxxxxcbXxxxxx 
+ Max output in Softmax layer= cbXxxxxx 
+ Input array Softmax layer= bf80000000000000bf0000003f3333333f07ae14be6b851fbf5d70a43eb4d6a13f1ef9db3dfced91 
+ Output array Softmax layer= 3d0530eb3db4f0573d5b7d8b3e362e6c3e19b37f3d8fc3123d1864803e00cb2c3e2857fb3dccb923 
+ Max output in Softmax layer= 3e362e6c 

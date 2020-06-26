@@ -1,0 +1,486 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Jun 08 16:02:33 2020
+# Process ID: 13132
+# Log file: D:/CNN2/softmax/vivado.log
+# Journal file: D:/CNN2/softmax\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CNN2/softmax/softmax.xpr
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_simulation
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source reciporical_tb.tcl
+add_bp {D:/CNN2/softmax/softmax.srcs/sources_1/new/reciporical.v} 22
+remove_bps -file {D:/CNN2/softmax/softmax.srcs/sources_1/new/reciporical.v} -line 22
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+close [ open D:/CNN2/softmax/softmax.srcs/sources_1/new/Xncalculation.v w ]
+add_files D:/CNN2/softmax/softmax.srcs/sources_1/new/Xncalculation.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+close [ open D:/CNN2/softmax/softmax.srcs/sources_1/new/division.v w ]
+add_files D:/CNN2/softmax/softmax.srcs/sources_1/new/division.v
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top exponential [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top exponential_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+launch_simulation
+source exponential_tb.tcl
+close_sim
+close [ open D:/CNN2/softmax/softmax.srcs/sources_1/new/Accumulator1.v w ]
+add_files D:/CNN2/softmax/softmax.srcs/sources_1/new/Accumulator1.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+source Softmax_Layer.tcl
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top reciporical_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top reciporical_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+launch_simulation
+source reciporical_tb.tcl
+close_sim
+close [ open D:/CNN2/softmax/softmax.srcs/sources_1/new/Softmax_Layer_tb.v w ]
+add_files D:/CNN2/softmax/softmax.srcs/sources_1/new/Softmax_Layer_tb.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+launch_runs synth_1
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+set_property board_part xilinx.com:zc702:part0:0.9 [current_project]
+launch_simulation
+source Softmax_Layer.tcl
+close_sim
+close_sim
+launch_runs synth_1
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+close_design
+create_run synth_2 -flow {Vivado Synthesis 2015} -strategy {Vivado Synthesis Defaults}
+current_run [get_runs synth_2]
+set_property part xc7a200tfbv676-2L [current_project]
+launch_runs synth_2
+wait_on_run synth_2
+set_property board_part xilinx.com:ac701:part0:1.0 [current_project]
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+open_run synth_2 -name synth_2
+write_schematic -format pdf -orientation portrait -scope current_page D:/CNN2/softmax/schematicSoftmax1.pdf
+write_schematic -format pdf -orientation portrait -scope current_page D:/CNN2/softmax/schematic_Softmax2.pdf
+close_design
+close [ open D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v w ]
+add_files D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top maxValue [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source maxValue.tcl
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+add_bp {D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v} 31
+remove_bps -file {D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v} -line 31
+add_bp {D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v} 34
+add_bp {D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v} 43
+remove_bps -file {D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v} -line 34
+add_bp {D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v} 34
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+reset_run synth_2
+launch_simulation
+source Softmax_Layer_tb.tcl
+add_bp {D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v} 24
+add_bp {D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v} 27
+add_bp {D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v} 31
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+add_bp {D:/CNN2/softmax/softmax.srcs/sources_1/new/Softmax_Layer_tb.v} 30
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
+launch_runs synth_2
+wait_on_run synth_2
+open_run synth_2 -name synth_2
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+open_run synth_2 -name synth_2
+write_schematic -format pdf -orientation portrait -scope current_page D:/CNN2/softmax/schematic_Softmax5.pdf
+close_design
+launch_simulation
+source Softmax_Layer.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Softmax_Layer_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source Softmax_Layer_tb.tcl
+close_sim
