@@ -2,71 +2,69 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Tue Jun 09 21:48:26 2020
-# Process ID: 13780
-# Log file: D:/CNN2/softmax/softmax.runs/synth_2/Softmax_Layer.vds
-# Journal file: D:/CNN2/softmax/softmax.runs/synth_2\vivado.jou
+# Start of session at: Wed Jul 29 16:04:24 2020
+# Process ID: 18956
+# Log file: D:/Softmax_CNN/softmax/softmax.runs/synth_2/Softmax_Layer.vds
+# Journal file: D:/Softmax_CNN/softmax/softmax.runs/synth_2\vivado.jou
 #-----------------------------------------------------------
 source Softmax_Layer.tcl -notrace
 Command: synth_design -top Softmax_Layer -part xc7a200tfbg676-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
-WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/CNN2/softmax/softmax.srcs/sources_1/new/mul.v:31]
-WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/CNN2/softmax/softmax.srcs/sources_1/new/mul.v:31]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/mul.v:31]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/mul.v:31]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 280.828 ; gain = 35.633
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 281.254 ; gain = 35.684
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Softmax_Layer' [D:/CNN2/softmax/softmax.srcs/sources_1/new/Softmax_Layer.v:6]
+INFO: [Synth 8-638] synthesizing module 'Softmax_Layer' [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/Softmax_Layer.v:6]
 	Parameter sizeArr bound to: 10 - type: integer 
 	Parameter width bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'exponential' [D:/CNN2/softmax/softmax.srcs/sources_1/new/exponential.v:7]
+	Parameter one bound to: 1065353216 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'exponential' [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/exponential.v:7]
 	Parameter size bound to: 32 - type: integer 
 	Parameter noOfTerms bound to: 6 - type: integer 
 	Parameter constants bound to: 985008993 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'term' [D:/CNN2/softmax/softmax.srcs/sources_1/new/term.v:6]
-INFO: [Synth 8-638] synthesizing module 'mul' [D:/CNN2/softmax/softmax.srcs/sources_1/new/mul.v:4]
-INFO: [Synth 8-256] done synthesizing module 'mul' (1#1) [D:/CNN2/softmax/softmax.srcs/sources_1/new/mul.v:4]
-INFO: [Synth 8-256] done synthesizing module 'term' (2#1) [D:/CNN2/softmax/softmax.srcs/sources_1/new/term.v:6]
-INFO: [Synth 8-638] synthesizing module 'add' [D:/CNN2/softmax/softmax.srcs/sources_1/new/add.v:2]
-INFO: [Synth 8-256] done synthesizing module 'add' (3#1) [D:/CNN2/softmax/softmax.srcs/sources_1/new/add.v:2]
-INFO: [Synth 8-256] done synthesizing module 'exponential' (4#1) [D:/CNN2/softmax/softmax.srcs/sources_1/new/exponential.v:7]
-INFO: [Synth 8-638] synthesizing module 'Accumulator1' [D:/CNN2/softmax/softmax.srcs/sources_1/new/Accumulator1.v:24]
+INFO: [Synth 8-638] synthesizing module 'term' [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/term.v:6]
+INFO: [Synth 8-638] synthesizing module 'mul' [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/mul.v:4]
+INFO: [Synth 8-256] done synthesizing module 'mul' (1#1) [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/mul.v:4]
+INFO: [Synth 8-256] done synthesizing module 'term' (2#1) [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/term.v:6]
+INFO: [Synth 8-638] synthesizing module 'add' [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/add.v:2]
+INFO: [Synth 8-256] done synthesizing module 'add' (3#1) [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/add.v:2]
+INFO: [Synth 8-256] done synthesizing module 'exponential' (4#1) [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/exponential.v:7]
+INFO: [Synth 8-638] synthesizing module 'Accumulator1' [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/Accumulator1.v:24]
 	Parameter size_Of_Array bound to: 10 - type: integer 
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Accumulator1' (5#1) [D:/CNN2/softmax/softmax.srcs/sources_1/new/Accumulator1.v:24]
-INFO: [Synth 8-638] synthesizing module 'division' [D:/CNN2/softmax/softmax.srcs/sources_1/new/division.v:7]
-	Parameter one bound to: 1065353216 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'reciporical' [D:/CNN2/softmax/softmax.srcs/sources_1/new/reciporical.v:13]
+INFO: [Synth 8-256] done synthesizing module 'Accumulator1' (5#1) [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/Accumulator1.v:24]
+INFO: [Synth 8-638] synthesizing module 'reciporical' [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/reciporical.v:13]
 	Parameter size bound to: 32 - type: integer 
 	Parameter constant1 bound to: 1077195930 - type: integer 
 	Parameter constant2 bound to: -1074728719 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'Xncalculation' [D:/CNN2/softmax/softmax.srcs/sources_1/new/Xncalculation.v:8]
+INFO: [Synth 8-638] synthesizing module 'Xncalculation' [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/Xncalculation.v:8]
 	Parameter two bound to: 1073741824 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Xncalculation' (6#1) [D:/CNN2/softmax/softmax.srcs/sources_1/new/Xncalculation.v:8]
-INFO: [Synth 8-256] done synthesizing module 'reciporical' (7#1) [D:/CNN2/softmax/softmax.srcs/sources_1/new/reciporical.v:13]
-INFO: [Synth 8-256] done synthesizing module 'division' (8#1) [D:/CNN2/softmax/softmax.srcs/sources_1/new/division.v:7]
-INFO: [Synth 8-638] synthesizing module 'maxValue' [D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v:9]
-INFO: [Synth 8-256] done synthesizing module 'maxValue' (9#1) [D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v:9]
-INFO: [Synth 8-256] done synthesizing module 'Softmax_Layer' (10#1) [D:/CNN2/softmax/softmax.srcs/sources_1/new/Softmax_Layer.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Xncalculation' (6#1) [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/Xncalculation.v:8]
+INFO: [Synth 8-256] done synthesizing module 'reciporical' (7#1) [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/reciporical.v:13]
+INFO: [Synth 8-638] synthesizing module 'maxValue' [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/maxValue.v:9]
+INFO: [Synth 8-256] done synthesizing module 'maxValue' (8#1) [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/maxValue.v:9]
+INFO: [Synth 8-256] done synthesizing module 'Softmax_Layer' (9#1) [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/Softmax_Layer.v:6]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 305.762 ; gain = 60.566
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 306.207 ; gain = 60.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 305.762 ; gain = 60.566
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 306.207 ; gain = 60.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg676-2
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 305.762 ; gain = 60.566
----------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a200tfbg676-2
-INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [D:/CNN2/softmax/softmax.srcs/sources_1/new/add.v:51]
-WARNING: [Synth 8-327] inferring latch for variable 'max_reg' [D:/CNN2/softmax/softmax.srcs/sources_1/new/maxValue.v:17]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 355.363 ; gain = 110.168
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 306.207 ; gain = 60.637
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/add.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'max_reg' [D:/Softmax_CNN/softmax/softmax.srcs/sources_1/new/maxValue.v:17]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 349.391 ; gain = 103.820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -74,11 +72,10 @@ Report RTL Partitions:
 |      |RTL Partition      |Replication |Instances |
 +------+-------------------+------------+----------+
 |1     |add                |          18|      6220|
-|2     |exponential__GCM0  |           1|      4296|
-|3     |Xncalculation__GC0 |           1|       717|
-|4     |reciporical__GC0   |           1|       768|
-|5     |mul__GU            |           1|       358|
-|6     |Softmax_Layer__GC0 |           1|      4932|
+|2     |Xncalculation__GC0 |           1|       717|
+|3     |reciporical__GC0   |           1|       768|
+|4     |exponential__GCM0  |           1|      4296|
+|5     |Softmax_Layer__GC0 |           1|      8512|
 +------+-------------------+------------+----------+
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -86,24 +83,24 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     48 Bit       Adders := 230   
-	   2 Input     25 Bit       Adders := 120   
-	   3 Input     24 Bit       Adders := 240   
-	   3 Input      8 Bit       Adders := 490   
-	   2 Input      8 Bit       Adders := 120   
-	  24 Input      8 Bit       Adders := 240   
-	   4 Input      8 Bit       Adders := 230   
+	   2 Input     48 Bit       Adders := 140   
+	   2 Input     25 Bit       Adders := 75    
+	   3 Input     24 Bit       Adders := 150   
+	   3 Input      8 Bit       Adders := 301   
+	   2 Input      8 Bit       Adders := 75    
+	  24 Input      8 Bit       Adders := 150   
+	   4 Input      8 Bit       Adders := 140   
 +---XORs : 
-	   2 Input      1 Bit         XORs := 230   
+	   2 Input      1 Bit         XORs := 140   
 +---Muxes : 
-	   2 Input     47 Bit        Muxes := 460   
+	   2 Input     47 Bit        Muxes := 280   
 	   5 Input     32 Bit        Muxes := 9     
-	   2 Input     24 Bit        Muxes := 6000  
-	   2 Input     23 Bit        Muxes := 840   
-	   2 Input      8 Bit        Muxes := 710   
-	   2 Input      4 Bit        Muxes := 2760  
-	   2 Input      2 Bit        Muxes := 5750  
-	   2 Input      1 Bit        Muxes := 258   
+	   2 Input     24 Bit        Muxes := 3750  
+	   2 Input     23 Bit        Muxes := 525   
+	   2 Input      8 Bit        Muxes := 440   
+	   2 Input      4 Bit        Muxes := 1725  
+	   2 Input      2 Bit        Muxes := 3590  
+	   2 Input      1 Bit        Muxes := 168   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -126,7 +123,7 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 23    
 	   2 Input      2 Bit        Muxes := 46    
 	   2 Input      1 Bit        Muxes := 2     
-Module mul__3 
+Module mul__1 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     48 Bit       Adders := 1     
@@ -148,7 +145,7 @@ Detailed RTL Component Info :
 	   2 Input     47 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-Module mul__5 
+Module mul__3 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     48 Bit       Adders := 1     
@@ -170,6 +167,10 @@ Detailed RTL Component Info :
 	   2 Input     47 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
+Module reciporical 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
 Module mul__7 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -236,7 +237,7 @@ Detailed RTL Component Info :
 	   2 Input     47 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-Module mul__1 
+Module mul__13 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     48 Bit       Adders := 1     
@@ -258,7 +259,7 @@ Detailed RTL Component Info :
 	   2 Input     47 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-Module mul__13 
+Module mul__15 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     48 Bit       Adders := 1     
@@ -280,7 +281,7 @@ Detailed RTL Component Info :
 	   2 Input     47 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-Module mul__15 
+Module mul__5 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     48 Bit       Adders := 1     
@@ -302,11 +303,106 @@ Detailed RTL Component Info :
 	   2 Input     47 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-Module reciporical 
+Module mul__17 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input      8 Bit       Adders := 1     
-Module mul__GU 
+	   2 Input     48 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mul__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mul__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mul__20 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mul__21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mul__22 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mul__23 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mul__24 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mul__25 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     48 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mul 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     48 Bit       Adders := 1     
@@ -374,118 +470,10 @@ BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 480.305 ; gain = 235.109
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 481.930 ; gain = 236.359
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
-DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
 DSP Report: Generating DSP mul1/exponent1, operation Mode is: A*B.
 DSP Report: operator mul1/exponent1 is absorbed into DSP mul1/exponent1.
 DSP Report: operator mul1/exponent1 is absorbed into DSP mul1/exponent1.
@@ -522,6 +510,195 @@ DSP Report: operator mulNumeratorDivisor/exponent1 is absorbed into DSP mulNumer
 DSP Report: Generating DSP mulNumeratorDivisor/exponent1, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator mulNumeratorDivisor/exponent1 is absorbed into DSP mulNumeratorDivisor/exponent1.
 DSP Report: operator mulNumeratorDivisor/exponent1 is absorbed into DSP mulNumeratorDivisor/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulPower/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: operator mulPower/exponent1 is absorbed into DSP mulPower/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP mulTerm/exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: operator mulTerm/exponent1 is absorbed into DSP mulTerm/exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: Generating DSP exponent1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
+DSP Report: operator exponent1 is absorbed into DSP exponent1.
 DSP Report: Generating DSP exponent1, operation Mode is: A*B.
 DSP Report: operator exponent1 is absorbed into DSP exponent1.
 DSP Report: operator exponent1 is absorbed into DSP exponent1.
@@ -532,20 +709,19 @@ DSP Report: Generating DSP exponent1, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator exponent1 is absorbed into DSP exponent1.
 DSP Report: operator exponent1 is absorbed into DSP exponent1.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 483.758 ; gain = 238.563
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 485.316 ; gain = 239.746
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 483.758 ; gain = 238.563
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 485.316 ; gain = 239.746
 
 Report RTL Partitions: 
 +------+-------------------+------------+----------+
 |      |RTL Partition      |Replication |Instances |
 +------+-------------------+------------+----------+
-|1     |add                |         120|      8586|
-|2     |exponential__GCM0  |          10|      9600|
-|3     |Xncalculation__GC0 |          40|      1601|
-|4     |reciporical__GC0   |          10|      1289|
-|5     |mul__GU            |          10|       847|
-|6     |Softmax_Layer__GC0 |           1|      5787|
+|1     |add                |          75|      8586|
+|2     |Xncalculation__GC0 |           4|      1601|
+|3     |reciporical__GC0   |           1|      1289|
+|4     |exponential__GCM0  |          10|      9600|
+|5     |Softmax_Layer__GC0 |           1|     14257|
 +------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -561,45 +737,72 @@ DSP:
 |mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
 |mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
 |mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
-|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
 |mul         | (A:0xf0f1)*B          | No           | 9      | 17     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
 |mul         | A*(B:0xf0f1)          | No           | 18     | 17     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
 |mul         | (PCIN>>17)+A*(B:0x78) | No           | 18     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
 |mul         | A*B                   | No           | 18     | 9      | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
 |mul         | A*B                   | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
 |mul         | (PCIN>>17)+A*B        | No           | 18     | 9      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
@@ -617,33 +820,32 @@ No constraint files found.
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:47 . Memory (MB): peak = 724.078 ; gain = 478.883
+Finished Area Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:35 . Memory (MB): peak = 739.770 ; gain = 494.199
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:01:28 ; elapsed = 00:01:47 . Memory (MB): peak = 724.078 ; gain = 478.883
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:20 ; elapsed = 00:01:35 . Memory (MB): peak = 739.770 ; gain = 494.199
 
 Report RTL Partitions: 
 +------+-------------------+------------+----------+
 |      |RTL Partition      |Replication |Instances |
 +------+-------------------+------------+----------+
 |1     |add                |           1|      1029|
-|2     |exponential__GCM0  |          10|      4648|
-|3     |Xncalculation__GC0 |          40|       828|
-|4     |reciporical__GC0   |          10|       436|
-|5     |mul__GU            |          10|       451|
-|6     |Softmax_Layer__GC0 |           1|      2214|
-|7     |add__1             |          58|      3005|
-|8     |add__2             |           1|      3002|
-|9     |add__3             |          10|      2267|
-|10    |add__4             |          10|      1828|
-|11    |add__5             |          40|      2309|
+|2     |Xncalculation__GC0 |           4|       828|
+|3     |reciporical__GC0   |           1|       436|
+|4     |exponential__GCM0  |          10|      4648|
+|5     |Softmax_Layer__GC0 |           1|      6724|
+|6     |add__1             |          58|      3005|
+|7     |add__2             |           1|      3002|
+|8     |add__3             |           1|      1828|
+|9     |add__4             |           4|      2309|
+|10    |add__5             |          10|      2267|
 +------+-------------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:28 ; elapsed = 00:01:47 . Memory (MB): peak = 724.078 ; gain = 478.883
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:20 ; elapsed = 00:01:35 . Memory (MB): peak = 739.770 ; gain = 494.199
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:47 . Memory (MB): peak = 724.078 ; gain = 478.883
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:35 . Memory (MB): peak = 739.770 ; gain = 494.199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -651,22 +853,21 @@ Report RTL Partitions:
 |      |RTL Partition      |Replication |Instances |
 +------+-------------------+------------+----------+
 |1     |add                |           1|      1029|
-|2     |exponential__GCM0  |          10|      4648|
-|3     |Xncalculation__GC0 |          40|       828|
-|4     |reciporical__GC0   |          10|       436|
-|5     |mul__GU            |          10|       451|
-|6     |Softmax_Layer__GC0 |           1|      2214|
-|7     |add__1             |          58|      3005|
-|8     |add__2             |           1|      3002|
-|9     |add__3             |          10|      2267|
-|10    |add__4             |          10|      1828|
-|11    |add__5             |          40|      2309|
+|2     |Xncalculation__GC0 |           4|       828|
+|3     |reciporical__GC0   |           1|       436|
+|4     |exponential__GCM0  |          10|      4648|
+|5     |Softmax_Layer__GC0 |           1|      6724|
+|6     |add__1             |          58|      3005|
+|7     |add__2             |           1|      3002|
+|8     |add__3             |           1|      1828|
+|9     |add__4             |           4|      2309|
+|10    |add__5             |          10|      2267|
 +------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:48 ; elapsed = 00:02:11 . Memory (MB): peak = 817.832 ; gain = 572.637
+Finished Technology Mapping : Time (s): cpu = 00:01:32 ; elapsed = 00:01:48 . Memory (MB): peak = 751.996 ; gain = 506.426
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -684,7 +885,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:06 ; elapsed = 00:02:31 . Memory (MB): peak = 926.090 ; gain = 680.895
+Finished IO Insertion : Time (s): cpu = 00:01:42 ; elapsed = 00:01:58 . Memory (MB): peak = 784.484 ; gain = 538.914
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -697,7 +898,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:09 ; elapsed = 00:02:33 . Memory (MB): peak = 926.090 ; gain = 680.895
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:01:59 . Memory (MB): peak = 784.484 ; gain = 538.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -709,13 +910,13 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:30 ; elapsed = 00:02:55 . Memory (MB): peak = 926.090 ; gain = 680.895
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:56 ; elapsed = 00:02:13 . Memory (MB): peak = 784.484 ; gain = 538.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Renaming Generated Ports : Time (s): cpu = 00:02:30 ; elapsed = 00:02:55 . Memory (MB): peak = 926.090 ; gain = 680.895
+Start Renaming Generated Ports : Time (s): cpu = 00:01:56 ; elapsed = 00:02:13 . Memory (MB): peak = 784.484 ; gain = 538.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:08:58 ; elapsed = 00:09:33 . Memory (MB): peak = 926.090 ; gain = 680.895
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:25 ; elapsed = 00:06:42 . Memory (MB): peak = 784.484 ; gain = 538.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -732,14 +933,14 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     9|
-|2     |CARRY4  | 10862|
-|3     |DSP48E1 |   690|
-|4     |LUT1    |  2380|
-|5     |LUT2    | 26473|
-|6     |LUT3    | 20853|
-|7     |LUT4    | 20678|
-|8     |LUT5    | 41087|
-|9     |LUT6    | 45594|
+|2     |CARRY4  |  6974|
+|3     |DSP48E1 |   420|
+|4     |LUT1    |  1156|
+|5     |LUT2    | 17502|
+|6     |LUT3    | 15578|
+|7     |LUT4    | 13873|
+|8     |LUT5    | 26723|
+|9     |LUT6    | 30871|
 |10    |MUXF7   |    20|
 |11    |LD      |   288|
 |12    |IBUF    |   320|
@@ -747,389 +948,244 @@ Report Cell Usage:
 +------+--------+------+
 
 Report Instance Areas: 
-+------+---------------------------+------------------+-------+
-|      |Instance                   |Module            |Cells  |
-+------+---------------------------+------------------+-------+
-|1     |top                        |                  | 169606|
-|2     |  \genblk1[0].E            |exponential       |   6041|
-|3     |    \genblk1[0].firstTerm  |term_344          |    122|
-|4     |      mulPower             |mul_360           |     61|
-|5     |      mulTerm              |mul_361           |     61|
-|6     |    \genblk1[1].firstTerm  |term_345          |   1931|
-|7     |      mulPower             |mul_358           |   1095|
-|8     |      mulTerm              |mul_359           |    836|
-|9     |    \genblk1[2].firstTerm  |term_346          |    846|
-|10    |      mulPower             |mul_356           |    487|
-|11    |      mulTerm              |mul_357           |    359|
-|12    |    \genblk1[3].firstTerm  |term_347          |    827|
-|13    |      mulPower             |mul_354           |    295|
-|14    |      mulTerm              |mul_355           |    532|
-|15    |    \genblk1[4].firstTerm  |term_348          |    740|
-|16    |      mulPower             |mul_352           |    208|
-|17    |      mulTerm              |mul_353           |    532|
-|18    |    \genblk1[5].firstTerm  |term_349          |   1575|
-|19    |      mulPower             |mul_350           |    740|
-|20    |      mulTerm              |mul_351           |    835|
-|21    |  \genblk1[1].E            |exponential_0     |   5527|
-|22    |    \genblk1[0].firstTerm  |term_326          |    122|
-|23    |      mulPower             |mul_342           |     61|
-|24    |      mulTerm              |mul_343           |     61|
-|25    |    \genblk1[1].firstTerm  |term_327          |   1931|
-|26    |      mulPower             |mul_340           |   1095|
-|27    |      mulTerm              |mul_341           |    836|
-|28    |    \genblk1[2].firstTerm  |term_328          |    846|
-|29    |      mulPower             |mul_338           |    487|
-|30    |      mulTerm              |mul_339           |    359|
-|31    |    \genblk1[3].firstTerm  |term_329          |    827|
-|32    |      mulPower             |mul_336           |    295|
-|33    |      mulTerm              |mul_337           |    532|
-|34    |    \genblk1[4].firstTerm  |term_330          |    740|
-|35    |      mulPower             |mul_334           |    208|
-|36    |      mulTerm              |mul_335           |    532|
-|37    |    \genblk1[5].firstTerm  |term_331          |   1061|
-|38    |      mulPower             |mul_332           |    428|
-|39    |      mulTerm              |mul_333           |    633|
-|40    |  \genblk1[2].E            |exponential_1     |   5816|
-|41    |    \genblk1[0].firstTerm  |term_308          |    122|
-|42    |      mulPower             |mul_324           |     61|
-|43    |      mulTerm              |mul_325           |     61|
-|44    |    \genblk1[1].firstTerm  |term_309          |   1931|
-|45    |      mulPower             |mul_322           |   1095|
-|46    |      mulTerm              |mul_323           |    836|
-|47    |    \genblk1[2].firstTerm  |term_310          |    846|
-|48    |      mulPower             |mul_320           |    487|
-|49    |      mulTerm              |mul_321           |    359|
-|50    |    \genblk1[3].firstTerm  |term_311          |    827|
-|51    |      mulPower             |mul_318           |    295|
-|52    |      mulTerm              |mul_319           |    532|
-|53    |    \genblk1[4].firstTerm  |term_312          |    740|
-|54    |      mulPower             |mul_316           |    208|
-|55    |      mulTerm              |mul_317           |    532|
-|56    |    \genblk1[5].firstTerm  |term_313          |   1350|
-|57    |      mulPower             |mul_314           |    635|
-|58    |      mulTerm              |mul_315           |    715|
-|59    |  \genblk1[3].E            |exponential_2     |   6146|
-|60    |    \genblk1[0].firstTerm  |term_290          |    122|
-|61    |      mulPower             |mul_306           |     61|
-|62    |      mulTerm              |mul_307           |     61|
-|63    |    \genblk1[1].firstTerm  |term_291          |   1931|
-|64    |      mulPower             |mul_304           |   1095|
-|65    |      mulTerm              |mul_305           |    836|
-|66    |    \genblk1[2].firstTerm  |term_292          |    846|
-|67    |      mulPower             |mul_302           |    487|
-|68    |      mulTerm              |mul_303           |    359|
-|69    |    \genblk1[3].firstTerm  |term_293          |    827|
-|70    |      mulPower             |mul_300           |    295|
-|71    |      mulTerm              |mul_301           |    532|
-|72    |    \genblk1[4].firstTerm  |term_294          |    740|
-|73    |      mulPower             |mul_298           |    208|
-|74    |      mulTerm              |mul_299           |    532|
-|75    |    \genblk1[5].firstTerm  |term_295          |   1680|
-|76    |      mulPower             |mul_296           |    915|
-|77    |      mulTerm              |mul_297           |    765|
-|78    |  \genblk1[4].E            |exponential_3     |   5816|
-|79    |    \genblk1[0].firstTerm  |term_272          |    122|
-|80    |      mulPower             |mul_288           |     61|
-|81    |      mulTerm              |mul_289           |     61|
-|82    |    \genblk1[1].firstTerm  |term_273          |   1931|
-|83    |      mulPower             |mul_286           |   1095|
-|84    |      mulTerm              |mul_287           |    836|
-|85    |    \genblk1[2].firstTerm  |term_274          |    846|
-|86    |      mulPower             |mul_284           |    487|
-|87    |      mulTerm              |mul_285           |    359|
-|88    |    \genblk1[3].firstTerm  |term_275          |    827|
-|89    |      mulPower             |mul_282           |    295|
-|90    |      mulTerm              |mul_283           |    532|
-|91    |    \genblk1[4].firstTerm  |term_276          |    740|
-|92    |      mulPower             |mul_280           |    208|
-|93    |      mulTerm              |mul_281           |    532|
-|94    |    \genblk1[5].firstTerm  |term_277          |   1350|
-|95    |      mulPower             |mul_278           |    635|
-|96    |      mulTerm              |mul_279           |    715|
-|97    |  \genblk1[5].E            |exponential_4     |   6146|
-|98    |    \genblk1[0].firstTerm  |term_254          |    122|
-|99    |      mulPower             |mul_270           |     61|
-|100   |      mulTerm              |mul_271           |     61|
-|101   |    \genblk1[1].firstTerm  |term_255          |   1931|
-|102   |      mulPower             |mul_268           |   1095|
-|103   |      mulTerm              |mul_269           |    836|
-|104   |    \genblk1[2].firstTerm  |term_256          |    846|
-|105   |      mulPower             |mul_266           |    487|
-|106   |      mulTerm              |mul_267           |    359|
-|107   |    \genblk1[3].firstTerm  |term_257          |    827|
-|108   |      mulPower             |mul_264           |    295|
-|109   |      mulTerm              |mul_265           |    532|
-|110   |    \genblk1[4].firstTerm  |term_258          |    740|
-|111   |      mulPower             |mul_262           |    208|
-|112   |      mulTerm              |mul_263           |    532|
-|113   |    \genblk1[5].firstTerm  |term_259          |   1680|
-|114   |      mulPower             |mul_260           |    915|
-|115   |      mulTerm              |mul_261           |    765|
-|116   |  \genblk1[6].E            |exponential_5     |   5816|
-|117   |    \genblk1[0].firstTerm  |term_236          |    122|
-|118   |      mulPower             |mul_252           |     61|
-|119   |      mulTerm              |mul_253           |     61|
-|120   |    \genblk1[1].firstTerm  |term_237          |   1931|
-|121   |      mulPower             |mul_250           |   1095|
-|122   |      mulTerm              |mul_251           |    836|
-|123   |    \genblk1[2].firstTerm  |term_238          |    846|
-|124   |      mulPower             |mul_248           |    487|
-|125   |      mulTerm              |mul_249           |    359|
-|126   |    \genblk1[3].firstTerm  |term_239          |    827|
-|127   |      mulPower             |mul_246           |    295|
-|128   |      mulTerm              |mul_247           |    532|
-|129   |    \genblk1[4].firstTerm  |term_240          |    740|
-|130   |      mulPower             |mul_244           |    208|
-|131   |      mulTerm              |mul_245           |    532|
-|132   |    \genblk1[5].firstTerm  |term_241          |   1350|
-|133   |      mulPower             |mul_242           |    635|
-|134   |      mulTerm              |mul_243           |    715|
-|135   |  \genblk1[7].E            |exponential_6     |   6139|
-|136   |    \genblk1[0].firstTerm  |term_218          |    122|
-|137   |      mulPower             |mul_234           |     61|
-|138   |      mulTerm              |mul_235           |     61|
-|139   |    \genblk1[1].firstTerm  |term_219          |   1931|
-|140   |      mulPower             |mul_232           |   1095|
-|141   |      mulTerm              |mul_233           |    836|
-|142   |    \genblk1[2].firstTerm  |term_220          |    846|
-|143   |      mulPower             |mul_230           |    487|
-|144   |      mulTerm              |mul_231           |    359|
-|145   |    \genblk1[3].firstTerm  |term_221          |    827|
-|146   |      mulPower             |mul_228           |    295|
-|147   |      mulTerm              |mul_229           |    532|
-|148   |    \genblk1[4].firstTerm  |term_222          |    740|
-|149   |      mulPower             |mul_226           |    208|
-|150   |      mulTerm              |mul_227           |    532|
-|151   |    \genblk1[5].firstTerm  |term_223          |   1673|
-|152   |      mulPower             |mul_224           |    908|
-|153   |      mulTerm              |mul_225           |    765|
-|154   |  \genblk1[8].E            |exponential_7     |   5818|
-|155   |    \genblk1[0].firstTerm  |term_200          |    122|
-|156   |      mulPower             |mul_216           |     61|
-|157   |      mulTerm              |mul_217           |     61|
-|158   |    \genblk1[1].firstTerm  |term_201          |   1931|
-|159   |      mulPower             |mul_214           |   1095|
-|160   |      mulTerm              |mul_215           |    836|
-|161   |    \genblk1[2].firstTerm  |term_202          |    846|
-|162   |      mulPower             |mul_212           |    487|
-|163   |      mulTerm              |mul_213           |    359|
-|164   |    \genblk1[3].firstTerm  |term_203          |    827|
-|165   |      mulPower             |mul_210           |    295|
-|166   |      mulTerm              |mul_211           |    532|
-|167   |    \genblk1[4].firstTerm  |term_204          |    740|
-|168   |      mulPower             |mul_208           |    208|
-|169   |      mulTerm              |mul_209           |    532|
-|170   |    \genblk1[5].firstTerm  |term_205          |   1352|
-|171   |      mulPower             |mul_206           |    635|
-|172   |      mulTerm              |mul_207           |    717|
-|173   |  \genblk1[9].E            |exponential_8     |   7997|
-|174   |    \genblk1[0].firstTerm  |term              |    122|
-|175   |      mulPower             |mul_198           |     61|
-|176   |      mulTerm              |mul_199           |     61|
-|177   |    \genblk1[1].firstTerm  |term_183          |   1931|
-|178   |      mulPower             |mul_196           |   1095|
-|179   |      mulTerm              |mul_197           |    836|
-|180   |    \genblk1[2].firstTerm  |term_184          |    846|
-|181   |      mulPower             |mul_194           |    487|
-|182   |      mulTerm              |mul_195           |    359|
-|183   |    \genblk1[3].firstTerm  |term_185          |    827|
-|184   |      mulPower             |mul_192           |    295|
-|185   |      mulTerm              |mul_193           |    532|
-|186   |    \genblk1[4].firstTerm  |term_186          |    740|
-|187   |      mulPower             |mul_190           |    208|
-|188   |      mulTerm              |mul_191           |    532|
-|189   |    \genblk1[5].firstTerm  |term_187          |   3531|
-|190   |      mulPower             |mul_188           |   1897|
-|191   |      mulTerm              |mul_189           |   1634|
-|192   |  \genblk3[0].div          |division          |   4049|
-|193   |    mulReciporical         |mul_167           |    126|
-|194   |    r1                     |reciporical_168   |   3923|
-|195   |      firstterm            |Xncalculation_169 |    768|
-|196   |        mul1               |mul_181           |    365|
-|197   |        mul2               |mul_182           |    403|
-|198   |      forthterm            |Xncalculation_170 |    677|
-|199   |        mul1               |mul_179           |    425|
-|200   |        mul2               |mul_180           |    252|
-|201   |      mulD                 |mul_171           |     85|
-|202   |      mulNumeratorDivisor  |mul_172           |    131|
-|203   |      secondterm           |Xncalculation_173 |    957|
-|204   |        mul1               |mul_177           |    615|
-|205   |        mul2               |mul_178           |    342|
-|206   |      thirdterm            |Xncalculation_174 |   1305|
-|207   |        mul1               |mul_175           |    994|
-|208   |        mul2               |mul_176           |    311|
-|209   |  \genblk3[1].div          |division_9        |   4046|
-|210   |    mulReciporical         |mul_151           |    127|
-|211   |    r1                     |reciporical_152   |   3919|
-|212   |      firstterm            |Xncalculation_153 |    768|
-|213   |        mul1               |mul_165           |    365|
-|214   |        mul2               |mul_166           |    403|
-|215   |      forthterm            |Xncalculation_154 |    677|
-|216   |        mul1               |mul_163           |    425|
-|217   |        mul2               |mul_164           |    252|
-|218   |      mulD                 |mul_155           |     85|
-|219   |      mulNumeratorDivisor  |mul_156           |    132|
-|220   |      secondterm           |Xncalculation_157 |    957|
-|221   |        mul1               |mul_161           |    615|
-|222   |        mul2               |mul_162           |    342|
-|223   |      thirdterm            |Xncalculation_158 |   1300|
-|224   |        mul1               |mul_159           |    989|
-|225   |        mul2               |mul_160           |    311|
-|226   |  \genblk3[2].div          |division_10       |   4046|
-|227   |    mulReciporical         |mul_135           |    127|
-|228   |    r1                     |reciporical_136   |   3919|
-|229   |      firstterm            |Xncalculation_137 |    768|
-|230   |        mul1               |mul_149           |    365|
-|231   |        mul2               |mul_150           |    403|
-|232   |      forthterm            |Xncalculation_138 |    677|
-|233   |        mul1               |mul_147           |    425|
-|234   |        mul2               |mul_148           |    252|
-|235   |      mulD                 |mul_139           |     85|
-|236   |      mulNumeratorDivisor  |mul_140           |    132|
-|237   |      secondterm           |Xncalculation_141 |    957|
-|238   |        mul1               |mul_145           |    615|
-|239   |        mul2               |mul_146           |    342|
-|240   |      thirdterm            |Xncalculation_142 |   1300|
-|241   |        mul1               |mul_143           |    989|
-|242   |        mul2               |mul_144           |    311|
-|243   |  \genblk3[3].div          |division_11       |   4046|
-|244   |    mulReciporical         |mul_119           |    127|
-|245   |    r1                     |reciporical_120   |   3919|
-|246   |      firstterm            |Xncalculation_121 |    768|
-|247   |        mul1               |mul_133           |    365|
-|248   |        mul2               |mul_134           |    403|
-|249   |      forthterm            |Xncalculation_122 |    677|
-|250   |        mul1               |mul_131           |    425|
-|251   |        mul2               |mul_132           |    252|
-|252   |      mulD                 |mul_123           |     85|
-|253   |      mulNumeratorDivisor  |mul_124           |    132|
-|254   |      secondterm           |Xncalculation_125 |    957|
-|255   |        mul1               |mul_129           |    615|
-|256   |        mul2               |mul_130           |    342|
-|257   |      thirdterm            |Xncalculation_126 |   1300|
-|258   |        mul1               |mul_127           |    989|
-|259   |        mul2               |mul_128           |    311|
-|260   |  \genblk3[4].div          |division_12       |   4046|
-|261   |    mulReciporical         |mul_103           |    127|
-|262   |    r1                     |reciporical_104   |   3919|
-|263   |      firstterm            |Xncalculation_105 |    768|
-|264   |        mul1               |mul_117           |    365|
-|265   |        mul2               |mul_118           |    403|
-|266   |      forthterm            |Xncalculation_106 |    677|
-|267   |        mul1               |mul_115           |    425|
-|268   |        mul2               |mul_116           |    252|
-|269   |      mulD                 |mul_107           |     85|
-|270   |      mulNumeratorDivisor  |mul_108           |    132|
-|271   |      secondterm           |Xncalculation_109 |    957|
-|272   |        mul1               |mul_113           |    615|
-|273   |        mul2               |mul_114           |    342|
-|274   |      thirdterm            |Xncalculation_110 |   1300|
-|275   |        mul1               |mul_111           |    989|
-|276   |        mul2               |mul_112           |    311|
-|277   |  \genblk3[5].div          |division_13       |   4046|
-|278   |    mulReciporical         |mul_87            |    127|
-|279   |    r1                     |reciporical_88    |   3919|
-|280   |      firstterm            |Xncalculation_89  |    768|
-|281   |        mul1               |mul_101           |    365|
-|282   |        mul2               |mul_102           |    403|
-|283   |      forthterm            |Xncalculation_90  |    677|
-|284   |        mul1               |mul_99            |    425|
-|285   |        mul2               |mul_100           |    252|
-|286   |      mulD                 |mul_91            |     85|
-|287   |      mulNumeratorDivisor  |mul_92            |    132|
-|288   |      secondterm           |Xncalculation_93  |    957|
-|289   |        mul1               |mul_97            |    615|
-|290   |        mul2               |mul_98            |    342|
-|291   |      thirdterm            |Xncalculation_94  |   1300|
-|292   |        mul1               |mul_95            |    989|
-|293   |        mul2               |mul_96            |    311|
-|294   |  \genblk3[6].div          |division_14       |   4046|
-|295   |    mulReciporical         |mul_71            |    127|
-|296   |    r1                     |reciporical_72    |   3919|
-|297   |      firstterm            |Xncalculation_73  |    768|
-|298   |        mul1               |mul_85            |    365|
-|299   |        mul2               |mul_86            |    403|
-|300   |      forthterm            |Xncalculation_74  |    677|
-|301   |        mul1               |mul_83            |    425|
-|302   |        mul2               |mul_84            |    252|
-|303   |      mulD                 |mul_75            |     85|
-|304   |      mulNumeratorDivisor  |mul_76            |    132|
-|305   |      secondterm           |Xncalculation_77  |    957|
-|306   |        mul1               |mul_81            |    615|
-|307   |        mul2               |mul_82            |    342|
-|308   |      thirdterm            |Xncalculation_78  |   1300|
-|309   |        mul1               |mul_79            |    989|
-|310   |        mul2               |mul_80            |    311|
-|311   |  \genblk3[7].div          |division_15       |   4046|
-|312   |    mulReciporical         |mul_55            |    127|
-|313   |    r1                     |reciporical_56    |   3919|
-|314   |      firstterm            |Xncalculation_57  |    768|
-|315   |        mul1               |mul_69            |    365|
-|316   |        mul2               |mul_70            |    403|
-|317   |      forthterm            |Xncalculation_58  |    677|
-|318   |        mul1               |mul_67            |    425|
-|319   |        mul2               |mul_68            |    252|
-|320   |      mulD                 |mul_59            |     85|
-|321   |      mulNumeratorDivisor  |mul_60            |    132|
-|322   |      secondterm           |Xncalculation_61  |    957|
-|323   |        mul1               |mul_65            |    615|
-|324   |        mul2               |mul_66            |    342|
-|325   |      thirdterm            |Xncalculation_62  |   1300|
-|326   |        mul1               |mul_63            |    989|
-|327   |        mul2               |mul_64            |    311|
-|328   |  \genblk3[8].div          |division_16       |   4046|
-|329   |    mulReciporical         |mul_39            |    127|
-|330   |    r1                     |reciporical_40    |   3919|
-|331   |      firstterm            |Xncalculation_41  |    768|
-|332   |        mul1               |mul_53            |    365|
-|333   |        mul2               |mul_54            |    403|
-|334   |      forthterm            |Xncalculation_42  |    677|
-|335   |        mul1               |mul_51            |    425|
-|336   |        mul2               |mul_52            |    252|
-|337   |      mulD                 |mul_43            |     85|
-|338   |      mulNumeratorDivisor  |mul_44            |    132|
-|339   |      secondterm           |Xncalculation_45  |    957|
-|340   |        mul1               |mul_49            |    615|
-|341   |        mul2               |mul_50            |    342|
-|342   |      thirdterm            |Xncalculation_46  |   1300|
-|343   |        mul1               |mul_47            |    989|
-|344   |        mul2               |mul_48            |    311|
-|345   |  \genblk3[9].div          |division_17       |  42284|
-|346   |    mulReciporical         |mul               |    127|
-|347   |    r1                     |reciporical       |  42157|
-|348   |      firstterm            |Xncalculation     |    764|
-|349   |        mul1               |mul_37            |    365|
-|350   |        mul2               |mul_38            |    399|
-|351   |      forthterm            |Xncalculation_26  |    677|
-|352   |        mul1               |mul_35            |    425|
-|353   |        mul2               |mul_36            |    252|
-|354   |      mulD                 |mul_27            |  38335|
-|355   |      mulNumeratorDivisor  |mul_28            |    132|
-|356   |      secondterm           |Xncalculation_29  |    953|
-|357   |        mul1               |mul_33            |    615|
-|358   |        mul2               |mul_34            |    338|
-|359   |      thirdterm            |Xncalculation_30  |   1296|
-|360   |        mul1               |mul_31            |    989|
-|361   |        mul2               |mul_32            |    307|
-|362   |  \genblk4[1].max1V        |maxValue          |    154|
-|363   |  \genblk4[2].max1V        |maxValue_18       |    121|
-|364   |  \genblk4[3].max1V        |maxValue_19       |    121|
-|365   |  \genblk4[4].max1V        |maxValue_20       |    121|
-|366   |  \genblk4[5].max1V        |maxValue_21       |    121|
-|367   |  \genblk4[6].max1V        |maxValue_22       |    121|
-|368   |  \genblk4[7].max1V        |maxValue_23       |    121|
-|369   |  \genblk4[8].max1V        |maxValue_24       |    121|
-|370   |  \genblk4[9].max1V        |maxValue_25       |     65|
-+------+---------------------------+------------------+-------+
++------+---------------------------+-----------------+-------+
+|      |Instance                   |Module           |Cells  |
++------+---------------------------+-----------------+-------+
+|1     |top                        |                 | 114086|
+|2     |  \genblk1[0].E            |exponential      |   6041|
+|3     |    \genblk1[0].firstTerm  |term_200         |    122|
+|4     |      mulPower             |mul_216          |     61|
+|5     |      mulTerm              |mul_217          |     61|
+|6     |    \genblk1[1].firstTerm  |term_201         |   1931|
+|7     |      mulPower             |mul_214          |   1095|
+|8     |      mulTerm              |mul_215          |    836|
+|9     |    \genblk1[2].firstTerm  |term_202         |    846|
+|10    |      mulPower             |mul_212          |    487|
+|11    |      mulTerm              |mul_213          |    359|
+|12    |    \genblk1[3].firstTerm  |term_203         |    827|
+|13    |      mulPower             |mul_210          |    295|
+|14    |      mulTerm              |mul_211          |    532|
+|15    |    \genblk1[4].firstTerm  |term_204         |    740|
+|16    |      mulPower             |mul_208          |    208|
+|17    |      mulTerm              |mul_209          |    532|
+|18    |    \genblk1[5].firstTerm  |term_205         |   1575|
+|19    |      mulPower             |mul_206          |    740|
+|20    |      mulTerm              |mul_207          |    835|
+|21    |  \genblk1[1].E            |exponential_0    |   5527|
+|22    |    \genblk1[0].firstTerm  |term_182         |    122|
+|23    |      mulPower             |mul_198          |     61|
+|24    |      mulTerm              |mul_199          |     61|
+|25    |    \genblk1[1].firstTerm  |term_183         |   1931|
+|26    |      mulPower             |mul_196          |   1095|
+|27    |      mulTerm              |mul_197          |    836|
+|28    |    \genblk1[2].firstTerm  |term_184         |    846|
+|29    |      mulPower             |mul_194          |    487|
+|30    |      mulTerm              |mul_195          |    359|
+|31    |    \genblk1[3].firstTerm  |term_185         |    827|
+|32    |      mulPower             |mul_192          |    295|
+|33    |      mulTerm              |mul_193          |    532|
+|34    |    \genblk1[4].firstTerm  |term_186         |    740|
+|35    |      mulPower             |mul_190          |    208|
+|36    |      mulTerm              |mul_191          |    532|
+|37    |    \genblk1[5].firstTerm  |term_187         |   1061|
+|38    |      mulPower             |mul_188          |    428|
+|39    |      mulTerm              |mul_189          |    633|
+|40    |  \genblk1[2].E            |exponential_1    |   5816|
+|41    |    \genblk1[0].firstTerm  |term_164         |    122|
+|42    |      mulPower             |mul_180          |     61|
+|43    |      mulTerm              |mul_181          |     61|
+|44    |    \genblk1[1].firstTerm  |term_165         |   1931|
+|45    |      mulPower             |mul_178          |   1095|
+|46    |      mulTerm              |mul_179          |    836|
+|47    |    \genblk1[2].firstTerm  |term_166         |    846|
+|48    |      mulPower             |mul_176          |    487|
+|49    |      mulTerm              |mul_177          |    359|
+|50    |    \genblk1[3].firstTerm  |term_167         |    827|
+|51    |      mulPower             |mul_174          |    295|
+|52    |      mulTerm              |mul_175          |    532|
+|53    |    \genblk1[4].firstTerm  |term_168         |    740|
+|54    |      mulPower             |mul_172          |    208|
+|55    |      mulTerm              |mul_173          |    532|
+|56    |    \genblk1[5].firstTerm  |term_169         |   1350|
+|57    |      mulPower             |mul_170          |    635|
+|58    |      mulTerm              |mul_171          |    715|
+|59    |  \genblk1[3].E            |exponential_2    |   6146|
+|60    |    \genblk1[0].firstTerm  |term_146         |    122|
+|61    |      mulPower             |mul_162          |     61|
+|62    |      mulTerm              |mul_163          |     61|
+|63    |    \genblk1[1].firstTerm  |term_147         |   1931|
+|64    |      mulPower             |mul_160          |   1095|
+|65    |      mulTerm              |mul_161          |    836|
+|66    |    \genblk1[2].firstTerm  |term_148         |    846|
+|67    |      mulPower             |mul_158          |    487|
+|68    |      mulTerm              |mul_159          |    359|
+|69    |    \genblk1[3].firstTerm  |term_149         |    827|
+|70    |      mulPower             |mul_156          |    295|
+|71    |      mulTerm              |mul_157          |    532|
+|72    |    \genblk1[4].firstTerm  |term_150         |    740|
+|73    |      mulPower             |mul_154          |    208|
+|74    |      mulTerm              |mul_155          |    532|
+|75    |    \genblk1[5].firstTerm  |term_151         |   1680|
+|76    |      mulPower             |mul_152          |    915|
+|77    |      mulTerm              |mul_153          |    765|
+|78    |  \genblk1[4].E            |exponential_3    |   5816|
+|79    |    \genblk1[0].firstTerm  |term_128         |    122|
+|80    |      mulPower             |mul_144          |     61|
+|81    |      mulTerm              |mul_145          |     61|
+|82    |    \genblk1[1].firstTerm  |term_129         |   1931|
+|83    |      mulPower             |mul_142          |   1095|
+|84    |      mulTerm              |mul_143          |    836|
+|85    |    \genblk1[2].firstTerm  |term_130         |    846|
+|86    |      mulPower             |mul_140          |    487|
+|87    |      mulTerm              |mul_141          |    359|
+|88    |    \genblk1[3].firstTerm  |term_131         |    827|
+|89    |      mulPower             |mul_138          |    295|
+|90    |      mulTerm              |mul_139          |    532|
+|91    |    \genblk1[4].firstTerm  |term_132         |    740|
+|92    |      mulPower             |mul_136          |    208|
+|93    |      mulTerm              |mul_137          |    532|
+|94    |    \genblk1[5].firstTerm  |term_133         |   1350|
+|95    |      mulPower             |mul_134          |    635|
+|96    |      mulTerm              |mul_135          |    715|
+|97    |  \genblk1[5].E            |exponential_4    |   6146|
+|98    |    \genblk1[0].firstTerm  |term_110         |    122|
+|99    |      mulPower             |mul_126          |     61|
+|100   |      mulTerm              |mul_127          |     61|
+|101   |    \genblk1[1].firstTerm  |term_111         |   1931|
+|102   |      mulPower             |mul_124          |   1095|
+|103   |      mulTerm              |mul_125          |    836|
+|104   |    \genblk1[2].firstTerm  |term_112         |    846|
+|105   |      mulPower             |mul_122          |    487|
+|106   |      mulTerm              |mul_123          |    359|
+|107   |    \genblk1[3].firstTerm  |term_113         |    827|
+|108   |      mulPower             |mul_120          |    295|
+|109   |      mulTerm              |mul_121          |    532|
+|110   |    \genblk1[4].firstTerm  |term_114         |    740|
+|111   |      mulPower             |mul_118          |    208|
+|112   |      mulTerm              |mul_119          |    532|
+|113   |    \genblk1[5].firstTerm  |term_115         |   1680|
+|114   |      mulPower             |mul_116          |    915|
+|115   |      mulTerm              |mul_117          |    765|
+|116   |  \genblk1[6].E            |exponential_5    |   5816|
+|117   |    \genblk1[0].firstTerm  |term_92          |    122|
+|118   |      mulPower             |mul_108          |     61|
+|119   |      mulTerm              |mul_109          |     61|
+|120   |    \genblk1[1].firstTerm  |term_93          |   1931|
+|121   |      mulPower             |mul_106          |   1095|
+|122   |      mulTerm              |mul_107          |    836|
+|123   |    \genblk1[2].firstTerm  |term_94          |    846|
+|124   |      mulPower             |mul_104          |    487|
+|125   |      mulTerm              |mul_105          |    359|
+|126   |    \genblk1[3].firstTerm  |term_95          |    827|
+|127   |      mulPower             |mul_102          |    295|
+|128   |      mulTerm              |mul_103          |    532|
+|129   |    \genblk1[4].firstTerm  |term_96          |    740|
+|130   |      mulPower             |mul_100          |    208|
+|131   |      mulTerm              |mul_101          |    532|
+|132   |    \genblk1[5].firstTerm  |term_97          |   1350|
+|133   |      mulPower             |mul_98           |    635|
+|134   |      mulTerm              |mul_99           |    715|
+|135   |  \genblk1[7].E            |exponential_6    |   6139|
+|136   |    \genblk1[0].firstTerm  |term_74          |    122|
+|137   |      mulPower             |mul_90           |     61|
+|138   |      mulTerm              |mul_91           |     61|
+|139   |    \genblk1[1].firstTerm  |term_75          |   1931|
+|140   |      mulPower             |mul_88           |   1095|
+|141   |      mulTerm              |mul_89           |    836|
+|142   |    \genblk1[2].firstTerm  |term_76          |    846|
+|143   |      mulPower             |mul_86           |    487|
+|144   |      mulTerm              |mul_87           |    359|
+|145   |    \genblk1[3].firstTerm  |term_77          |    827|
+|146   |      mulPower             |mul_84           |    295|
+|147   |      mulTerm              |mul_85           |    532|
+|148   |    \genblk1[4].firstTerm  |term_78          |    740|
+|149   |      mulPower             |mul_82           |    208|
+|150   |      mulTerm              |mul_83           |    532|
+|151   |    \genblk1[5].firstTerm  |term_79          |   1673|
+|152   |      mulPower             |mul_80           |    908|
+|153   |      mulTerm              |mul_81           |    765|
+|154   |  \genblk1[8].E            |exponential_7    |   5818|
+|155   |    \genblk1[0].firstTerm  |term_56          |    122|
+|156   |      mulPower             |mul_72           |     61|
+|157   |      mulTerm              |mul_73           |     61|
+|158   |    \genblk1[1].firstTerm  |term_57          |   1931|
+|159   |      mulPower             |mul_70           |   1095|
+|160   |      mulTerm              |mul_71           |    836|
+|161   |    \genblk1[2].firstTerm  |term_58          |    846|
+|162   |      mulPower             |mul_68           |    487|
+|163   |      mulTerm              |mul_69           |    359|
+|164   |    \genblk1[3].firstTerm  |term_59          |    827|
+|165   |      mulPower             |mul_66           |    295|
+|166   |      mulTerm              |mul_67           |    532|
+|167   |    \genblk1[4].firstTerm  |term_60          |    740|
+|168   |      mulPower             |mul_64           |    208|
+|169   |      mulTerm              |mul_65           |    532|
+|170   |    \genblk1[5].firstTerm  |term_61          |   1352|
+|171   |      mulPower             |mul_62           |    635|
+|172   |      mulTerm              |mul_63           |    717|
+|173   |  \genblk1[9].E            |exponential_8    |   6044|
+|174   |    \genblk1[0].firstTerm  |term             |    122|
+|175   |      mulPower             |mul_54           |     61|
+|176   |      mulTerm              |mul_55           |     61|
+|177   |    \genblk1[1].firstTerm  |term_39          |   1931|
+|178   |      mulPower             |mul_52           |   1095|
+|179   |      mulTerm              |mul_53           |    836|
+|180   |    \genblk1[2].firstTerm  |term_40          |    846|
+|181   |      mulPower             |mul_50           |    487|
+|182   |      mulTerm              |mul_51           |    359|
+|183   |    \genblk1[3].firstTerm  |term_41          |    827|
+|184   |      mulPower             |mul_48           |    295|
+|185   |      mulTerm              |mul_49           |    532|
+|186   |    \genblk1[4].firstTerm  |term_42          |    740|
+|187   |      mulPower             |mul_46           |    208|
+|188   |      mulTerm              |mul_47           |    532|
+|189   |    \genblk1[5].firstTerm  |term_43          |   1578|
+|190   |      mulPower             |mul_44           |    797|
+|191   |      mulTerm              |mul_45           |    781|
+|192   |  \genblk3[0].div          |mul              |    127|
+|193   |  \genblk3[1].div          |mul_9            |    128|
+|194   |  \genblk3[2].div          |mul_10           |    209|
+|195   |  \genblk3[3].div          |mul_11           |    209|
+|196   |  \genblk3[4].div          |mul_12           |    209|
+|197   |  \genblk3[5].div          |mul_13           |    209|
+|198   |  \genblk3[6].div          |mul_14           |    209|
+|199   |  \genblk3[7].div          |mul_15           |    209|
+|200   |  \genblk3[8].div          |mul_16           |    209|
+|201   |  \genblk3[9].div          |mul_17           |    211|
+|202   |  \genblk4[1].max1V        |maxValue         |     74|
+|203   |  \genblk4[2].max1V        |maxValue_18      |     41|
+|204   |  \genblk4[3].max1V        |maxValue_19      |     41|
+|205   |  \genblk4[4].max1V        |maxValue_20      |     41|
+|206   |  \genblk4[5].max1V        |maxValue_21      |     41|
+|207   |  \genblk4[6].max1V        |maxValue_22      |     41|
+|208   |  \genblk4[7].max1V        |maxValue_23      |     41|
+|209   |  \genblk4[8].max1V        |maxValue_24      |     41|
+|210   |  \genblk4[9].max1V        |maxValue_25      |     32|
+|211   |  r1                       |reciporical      |  42922|
+|212   |    firstterm              |Xncalculation    |    764|
+|213   |      mul1                 |mul_37           |    365|
+|214   |      mul2                 |mul_38           |    399|
+|215   |    forthterm              |Xncalculation_26 |    677|
+|216   |      mul1                 |mul_35           |    425|
+|217   |      mul2                 |mul_36           |    252|
+|218   |    mulD                   |mul_27           |  38335|
+|219   |    mulNumeratorDivisor    |mul_28           |    540|
+|220   |    secondterm             |Xncalculation_29 |    953|
+|221   |      mul1                 |mul_33           |    615|
+|222   |      mul2                 |mul_34           |    338|
+|223   |    thirdterm              |Xncalculation_30 |   1653|
+|224   |      mul1                 |mul_31           |   1346|
+|225   |      mul2                 |mul_32           |    307|
++------+---------------------------+-----------------+-------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:09:03 ; elapsed = 00:09:39 . Memory (MB): peak = 926.090 ; gain = 680.895
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:29 ; elapsed = 00:06:46 . Memory (MB): peak = 784.484 ; gain = 538.914
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:09:00 ; elapsed = 00:09:27 . Memory (MB): peak = 926.090 ; gain = 671.555
-Synthesis Optimization Complete : Time (s): cpu = 00:09:03 ; elapsed = 00:09:39 . Memory (MB): peak = 926.090 ; gain = 680.895
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:27 ; elapsed = 00:06:38 . Memory (MB): peak = 784.484 ; gain = 529.574
+Synthesis Optimization Complete : Time (s): cpu = 00:06:29 ; elapsed = 00:06:46 . Memory (MB): peak = 784.484 ; gain = 538.914
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 12160 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Netlist 29-17] Analyzing 8002 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -1137,9 +1193,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 288 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-30 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+28 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:10:12 ; elapsed = 00:10:45 . Memory (MB): peak = 1241.992 ; gain = 987.457
-write_checkpoint: Time (s): cpu = 00:00:45 ; elapsed = 00:00:34 . Memory (MB): peak = 1242.902 ; gain = 0.910
-report_utilization: Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1242.902 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 09 22:00:02 2020...
+synth_design: Time (s): cpu = 00:07:08 ; elapsed = 00:07:28 . Memory (MB): peak = 1003.402 ; gain = 748.492
+write_checkpoint: Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 1003.402 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1003.402 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 29 16:12:27 2020...

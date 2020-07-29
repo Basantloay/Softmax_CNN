@@ -1,0 +1,7 @@
+Running: xsim.dir/Softmax_Layer_behav/xsimk.exe -simmode gui -wdb Softmax_Layer_behav.wdb -simrunnum 0 -socket 57711
+Design successfully loaded
+Design Loading Memory Usage: 26496 KB (Peak: 26496 KB)
+Design Loading CPU Usage: 499 ms
+Simulation completed
+Simulation Memory Usage: 26792 KB (Peak: 26792 KB)
+Simulation CPU Usage: 515 ms

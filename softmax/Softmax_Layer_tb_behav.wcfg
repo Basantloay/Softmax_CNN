@@ -20,6 +20,7 @@
       <obj_property name="ElementShortName">maxProbability[31:0]</obj_property>
       <obj_property name="ObjectShortName">maxProbability[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/Softmax_Layer_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>

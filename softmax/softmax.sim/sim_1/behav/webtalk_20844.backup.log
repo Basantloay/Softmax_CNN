@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Jul 29 16:15:59 2020
+# Process ID: 20964
+# Log file: D:/Softmax_CNN/softmax/softmax.sim/sim_1/behav/webtalk.log
+# Journal file: D:/Softmax_CNN/softmax/softmax.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source D:/Softmax_CNN/softmax/softmax.sim/sim_1/behav/xsim.dir/Softmax_Layer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2835065329 -regid "" -xml D:/Softmax_CNN/softmax/softmax.sim/sim_1/behav/xsim.dir/Softmax_Layer_tb_behav/webtalk/usage_stat..."
+    (file "D:/Softmax_CNN/softmax/softmax.sim/sim_1/behav/xsim.dir/Softmax_Layer_tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 29 16:16:01 2020...
